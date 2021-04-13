@@ -89,7 +89,8 @@ Deploy an helm chart
 * `kubeconfig_path`: *Optional.* File containing a kubeconfig. Overrides source configuration for cluster, token, and admin config.
 * `show_diff`: *Optional.* Show the diff that is applied if upgrading an existing successful release. Will not be used when `devel` is set. (Default: false)
 * `skip_missing_values:` *Optional.* Missing values files are skipped if they are specified in the values but do not exist. (Default false)
-
+* `post_renderer:` *Optional.* Run a post renderer script, such as kustomize
+* `env_vars:` *Optional.* List of key, value. Export environment variables prioring to running helm commands. Useful for post render scripts
 ## Example
 
 ### Out
